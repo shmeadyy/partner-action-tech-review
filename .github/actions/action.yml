@@ -1,0 +1,5 @@
+name: "Search for README.md"
+
+description: "Check for a README file in the current repository"
+
+inputs:
