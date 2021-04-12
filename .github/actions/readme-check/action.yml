@@ -1,11 +1,12 @@
 name: "Search for README.md"
-
 description: "Check for a README file in the current repository"
+author: "shmeadyy"
 
 inputs:
-  repo-token:
-    description: "token that gives permission to search through repo"
-    # required: true
+  token:
+    description: "Token used to authenticate with GitHub API. Default is built-in token but a personal access token may be used for org or user projects."
+    required: false
+    default: ${{ github.token }}
 
 runs:
   using: "node12"
