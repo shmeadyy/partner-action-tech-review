@@ -5,7 +5,7 @@ description: "Check for a README file in the current repository"
 inputs:
   repo-token:
     description: "token that gives permission to search through repo"
-    required: true
+    # required: true
 
 runs:
   using: "node12"
