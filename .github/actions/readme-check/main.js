@@ -1,10 +1,11 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
-const octokit = new Ocktokit();
+const { Octokit } = require("@octokit/rest");
 
 async function run() {
     try {
         const token = core.getInput('repo-token');
+        const octokit = new Ocktokit();
         await octokit.request('GET /search/code', {
             q: 'q'
           })
